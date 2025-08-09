@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube İndirici</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>YouTube İndirici</h1>
+      <p>Linki yapıştırın ve indirmeye başlayın.</p>
+
+      <div class="input-area">
+        <input
+          type="text"
+          id="youtube-link"
+          placeholder="YouTube linkini buraya yapıştırın..."
+        />
+        <button id="confirm-button" class="confirm-button">Onayla</button>
+      </div>
+
+      <div id="options-menu" class="options-menu-hidden">
+        <div class="option-group">
+          <p class="group-title">MP4 (Video)</p>
+          <button class="quality-option" data-format="mp4" data-quality="4k">
+            4K
+          </button>
+          <button class="quality-option" data-format="mp4" data-quality="1080p">
+            1080p
+          </button>
+          <button class="quality-option" data-format="mp4" data-quality="720p">
+            720p
+          </button>
+          <button class="quality-option" data-format="mp4" data-quality="480p">
+            480p
+          </button>
+          <button class="quality-option" data-format="mp4" data-quality="360p">
+            360p
+          </button>
+        </div>
+        <div class="option-group">
+          <p class="group-title">MP3 (Ses)</p>
+          <button
+            class="quality-option"
+            data-format="mp3"
+            data-quality="320kbps"
+          >
+            320kbps
+          </button>
+          <button
+            class="quality-option"
+            data-format="mp3"
+            data-quality="128kbps"
+          >
+            128kbps
+          </button>
+          <button
+            class="quality-option"
+            data-format="mp3"
+            data-quality="64kbps"
+          >
+            64kbps
+          </button>
+        </div>
+      </div>
+
+      <button id="download-button" class="download-button">İndir</button>
+      <div id="loading-indicator" class="loading-indicator">
+        <div class="spinner"></div>
+        <p>Dosya hazırlanıyor, lütfen bekleyin...</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
